@@ -5,7 +5,7 @@ using UnityEngine;
 public class OrbitAroundParent : MonoBehaviour {
 
     public Transform target;    // the object to orbit around
-    public int rotSpd;   // the speed of rotation
+    public float rotSpd;   // the speed of rotation
 
     void Start()
     {
@@ -18,7 +18,6 @@ public class OrbitAroundParent : MonoBehaviour {
 
     void FixedUpdate()
     {
-        while (!PlayerMovement.freeze)
             transform.RotateAround(target.transform.position, target.transform.up, rotSpd * Time.deltaTime);
     }
 }

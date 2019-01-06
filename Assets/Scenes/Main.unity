@@ -239,6 +239,8 @@ GameObject:
   - component: {fileID: 136451958}
   - component: {fileID: 136451957}
   - component: {fileID: 136451956}
+  - component: {fileID: 136451960}
+  - component: {fileID: 136451959}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -312,6 +314,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 136451954}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &136451959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136451954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c45738a67cc92040991b6fe2b7e65b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1606206472}
+  rotSpd: 5
+--- !u!114 &136451960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136451954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4e49a3ea6983848bbf16bc42930f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpd: 2
 --- !u!1 &245457256
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +350,8 @@ GameObject:
   - component: {fileID: 245457260}
   - component: {fileID: 245457259}
   - component: {fileID: 245457258}
+  - component: {fileID: 245457262}
+  - component: {fileID: 245457261}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Untagged
@@ -396,6 +425,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 245457256}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &245457261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245457256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c45738a67cc92040991b6fe2b7e65b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1606206472}
+  rotSpd: 4
+--- !u!114 &245457262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245457256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4e49a3ea6983848bbf16bc42930f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpd: 2
 --- !u!1 &278811082
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +535,8 @@ GameObject:
   - component: {fileID: 324883496}
   - component: {fileID: 324883495}
   - component: {fileID: 324883494}
+  - component: {fileID: 324883498}
+  - component: {fileID: 324883497}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
@@ -555,6 +611,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 324883492}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &324883497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 324883492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c45738a67cc92040991b6fe2b7e65b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1606206472}
+  rotSpd: 6
+--- !u!114 &324883498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 324883492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4e49a3ea6983848bbf16bc42930f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpd: 2
 --- !u!1 &701020051
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +647,8 @@ GameObject:
   - component: {fileID: 701020055}
   - component: {fileID: 701020054}
   - component: {fileID: 701020053}
+  - component: {fileID: 701020057}
+  - component: {fileID: 701020056}
   m_Layer: 0
   m_Name: Pluto
   m_TagString: Untagged
@@ -639,6 +722,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 701020051}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &701020056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 701020051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c45738a67cc92040991b6fe2b7e65b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1606206472}
+  rotSpd: 0.3
+--- !u!114 &701020057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 701020051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4e49a3ea6983848bbf16bc42930f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpd: 2
 --- !u!1 &797844183
 GameObject:
   m_ObjectHideFlags: 0
@@ -4160,6 +4268,8 @@ GameObject:
   - component: {fileID: 840336000}
   - component: {fileID: 840335999}
   - component: {fileID: 840335998}
+  - component: {fileID: 840336002}
+  - component: {fileID: 840336001}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -4233,6 +4343,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 840335996}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &840336001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840335996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c45738a67cc92040991b6fe2b7e65b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1606206472}
+  rotSpd: 7
+--- !u!114 &840336002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840335996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4e49a3ea6983848bbf16bc42930f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpd: 2
 --- !u!1 &972591088
 GameObject:
   m_ObjectHideFlags: 0
@@ -4244,6 +4379,8 @@ GameObject:
   - component: {fileID: 972591092}
   - component: {fileID: 972591091}
   - component: {fileID: 972591090}
+  - component: {fileID: 972591094}
+  - component: {fileID: 972591093}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -4318,6 +4455,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 972591088}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &972591093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972591088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c45738a67cc92040991b6fe2b7e65b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1606206472}
+  rotSpd: 6
+--- !u!114 &972591094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972591088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4e49a3ea6983848bbf16bc42930f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpd: 2
 --- !u!1 &973531360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4423,6 +4585,8 @@ GameObject:
   - component: {fileID: 1053399559}
   - component: {fileID: 1053399558}
   - component: {fileID: 1053399557}
+  - component: {fileID: 1053399561}
+  - component: {fileID: 1053399560}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
@@ -4496,6 +4660,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1053399555}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1053399560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1053399555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c45738a67cc92040991b6fe2b7e65b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1606206472}
+  rotSpd: 8
+--- !u!114 &1053399561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1053399555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4e49a3ea6983848bbf16bc42930f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpd: 2
 --- !u!1 &1090330559
 GameObject:
   m_ObjectHideFlags: 0
@@ -4938,6 +5127,8 @@ GameObject:
   - component: {fileID: 1855839589}
   - component: {fileID: 1855839588}
   - component: {fileID: 1855839587}
+  - component: {fileID: 1855839591}
+  - component: {fileID: 1855839590}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
@@ -5011,6 +5202,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1855839585}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1855839590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855839585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c45738a67cc92040991b6fe2b7e65b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1606206472}
+  rotSpd: 9
+--- !u!114 &1855839591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855839585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4e49a3ea6983848bbf16bc42930f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpd: 2
 --- !u!1 &2089401417
 GameObject:
   m_ObjectHideFlags: 0
@@ -5022,6 +5238,8 @@ GameObject:
   - component: {fileID: 2089401421}
   - component: {fileID: 2089401420}
   - component: {fileID: 2089401419}
+  - component: {fileID: 2089401423}
+  - component: {fileID: 2089401422}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -5095,3 +5313,28 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2089401417}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2089401422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089401417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c45738a67cc92040991b6fe2b7e65b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1606206472}
+  rotSpd: 8
+--- !u!114 &2089401423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089401417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4e49a3ea6983848bbf16bc42930f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpd: 2

@@ -9,7 +9,6 @@ public class PlanetRotation : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        while (!PlayerMovement.freeze)
             transform.Rotate(0, rotSpd * Time.deltaTime, 0);
     }
 }

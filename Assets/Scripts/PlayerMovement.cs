@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour {
 
 	Rigidbody player;
     ParticleSystem trail;
-    public static bool freeze;
 
 	public float speed = 10;
 
@@ -17,7 +16,7 @@ public class PlayerMovement : MonoBehaviour {
     public float yaw = 0;
     public float roll = 0;
     float vel = 0;
-    float frz = 0;
+
  
     Vector3 movement;
 
@@ -37,7 +36,6 @@ public class PlayerMovement : MonoBehaviour {
         yaw = Input.GetAxis("Horizontal");
         roll = Input.GetAxis ("Roll");
 		vel = Input.GetAxis ("Vertical");
-        frz = Input.GetAxis("Freeze");
         
         // controlling pitch
         player.AddTorque(transform.right * pitch * (sens / 2));
@@ -67,10 +65,6 @@ public class PlayerMovement : MonoBehaviour {
             trail.enableEmission = true;
         }
 
-        //controlling planet freeze
-        if (frz == 1)
-        {
-            freeze = !freeze;
-        }
+        //controlling planet freeze WIP
     }
 }
