@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606206472}
-  rotSpd: 5
+  rotSpd: 0
 --- !u!114 &136451960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606206472}
-  rotSpd: 4
+  rotSpd: 0
 --- !u!114 &245457262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606206472}
-  rotSpd: 6
+  rotSpd: 0
 --- !u!114 &324883498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4355,7 +4355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606206472}
-  rotSpd: 7
+  rotSpd: 0
 --- !u!114 &840336002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4467,7 +4467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606206472}
-  rotSpd: 2
+  rotSpd: 0
 --- !u!114 &972591094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4673,7 +4673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606206472}
-  rotSpd: 8
+  rotSpd: 0
 --- !u!114 &1053399561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4697,6 +4697,7 @@ GameObject:
   - component: {fileID: 1090330563}
   - component: {fileID: 1090330562}
   - component: {fileID: 1090330561}
+  - component: {fileID: 1090330564}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -4770,6 +4771,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1090330559}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1090330564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1090330559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c45738a67cc92040991b6fe2b7e65b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 972591089}
+  rotSpd: 1
 --- !u!1 &1468807315
 GameObject:
   m_ObjectHideFlags: 0
@@ -5228,7 +5242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606206472}
-  rotSpd: 9
+  rotSpd: 0
 --- !u!114 &1855839591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5339,7 +5353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606206472}
-  rotSpd: 8
+  rotSpd: 0
 --- !u!114 &2089401423
 MonoBehaviour:
   m_ObjectHideFlags: 0

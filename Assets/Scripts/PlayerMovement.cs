@@ -53,7 +53,10 @@ public class PlayerMovement : MonoBehaviour {
         movement = new Vector3(0, 0, vel);
 
         // accelerating
-        player.AddForce(player.rotation * movement * accel / Time.deltaTime);
+        if(vel >= 0)
+            player.AddForce(player.rotation * movement * accel / Time.deltaTime);
+        else
+            player.AddForce(player.rotation * movement * (accel/3) / Time.deltaTime);
 
         if (player.velocity.magnitude > speed)
         {
