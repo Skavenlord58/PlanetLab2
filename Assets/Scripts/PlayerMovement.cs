@@ -8,8 +8,10 @@ public class PlayerMovement : MonoBehaviour {
 
 	Rigidbody player;
     ParticleSystem trail;
+    public Camera ParentCamera;
 
-	public float speed = 10;
+    public float accel = 10;
+    public static float speed = 400;
 
 
     public float pitch = 0;
@@ -26,6 +28,7 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		player = GetComponent<Rigidbody>();
         trail = GetComponentInChildren<ParticleSystem>();
+        ParentCamera = GetComponent<Camera>();
         Vector3 currentRot = player.transform.position;
     }
 
@@ -48,7 +51,9 @@ public class PlayerMovement : MonoBehaviour {
 
         // move forwards & backwards
         movement = new Vector3(0, 0, vel);
-        player.AddForce(player.rotation * movement * speed / Time.deltaTime);
+
+        // accelerating
+        player.AddForce(player.rotation * movement * accel / Time.deltaTime);
 
         if (player.velocity.magnitude > speed)
         {
