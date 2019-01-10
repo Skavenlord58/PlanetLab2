@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour {
 		player = GetComponent<Rigidbody>();
         trail = GetComponentInChildren<ParticleSystem>();
         Vector3 currentRot = player.transform.position;
+        player.inertiaTensor = Vector3.one;
     }
 
 	void FixedUpdate () 

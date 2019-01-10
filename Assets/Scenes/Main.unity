@@ -283,6 +283,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 113265890}
+  - component: {fileID: 113265891}
   m_Layer: 0
   m_Name: Spacecraft
   m_TagString: Untagged
@@ -304,6 +305,18 @@ Transform:
   m_Father: {fileID: 1050835969}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &113265891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 113265889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 81.14, y: 9.7, z: 70}
+  m_Center: {x: 7.8, y: 4.9, z: 23.3}
 --- !u!1 &136451954
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,6 +330,7 @@ GameObject:
   - component: {fileID: 136451956}
   - component: {fileID: 136451960}
   - component: {fileID: 136451959}
+  - component: {fileID: 136451961}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -415,6 +429,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpd: 2
+--- !u!54 &136451961
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136451954}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &245457256
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,6 +457,7 @@ GameObject:
   - component: {fileID: 245457258}
   - component: {fileID: 245457262}
   - component: {fileID: 245457261}
+  - component: {fileID: 245457263}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Untagged
@@ -526,6 +556,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpd: 2
+--- !u!54 &245457263
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245457256}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &278811082
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +658,7 @@ GameObject:
   - component: {fileID: 324883494}
   - component: {fileID: 324883498}
   - component: {fileID: 324883497}
+  - component: {fileID: 324883499}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
@@ -712,6 +758,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpd: 2
+--- !u!54 &324883499
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 324883492}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &620546013
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +860,7 @@ GameObject:
   - component: {fileID: 701020053}
   - component: {fileID: 701020057}
   - component: {fileID: 701020056}
+  - component: {fileID: 701020058}
   m_Layer: 0
   m_Name: Pluto
   m_TagString: Untagged
@@ -814,7 +876,7 @@ Transform:
   m_GameObject: {fileID: 701020051}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 3800, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1666708895}
   m_RootOrder: 9
@@ -897,6 +959,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpd: 2
+--- !u!54 &701020058
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 701020051}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &744900688
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,8 +984,9 @@ GameObject:
   - component: {fileID: 744900689}
   - component: {fileID: 744900691}
   - component: {fileID: 744900690}
+  - component: {fileID: 744900692}
   m_Layer: 5
-  m_Name: Crosshair_static
+  m_Name: Crosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -965,6 +1043,26 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 744900688}
+--- !u!114 &744900692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 744900688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea427f2ba8aa4a4f8aefdff695a95d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ret_static: {fileID: 2100000, guid: f2727d8a6e689364ab44c7703138db19, type: 2}
+  ret_1: {fileID: 2100000, guid: e5450d81613179b499cb43a417653863, type: 2}
+  ret_2: {fileID: 2100000, guid: 0b5a5468b070a3146908701c20c73c24, type: 2}
+  ret_3: {fileID: 2100000, guid: 80208fa3e256258439e7598041ee7e6c, type: 2}
+  ret_4: {fileID: 2100000, guid: 8a23559898b7b3744a5392abdb8cf825, type: 2}
+  ret_5: {fileID: 2100000, guid: 983cf8fa27180f248accd99624fe3417, type: 2}
+  ret_6: {fileID: 2100000, guid: bbb3524173e6aa640b1f34f5314723c2, type: 2}
+  ret_7: {fileID: 2100000, guid: 05c70ebc75033a3439661abb16277b00, type: 2}
+  ret_8: {fileID: 2100000, guid: 687534f70cd3e4c4290d0f3a5f85b925, type: 2}
 --- !u!1 &797844183
 GameObject:
   m_ObjectHideFlags: 0
@@ -4488,6 +4586,7 @@ GameObject:
   - component: {fileID: 840335998}
   - component: {fileID: 840336002}
   - component: {fileID: 840336001}
+  - component: {fileID: 840336003}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -4586,6 +4685,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpd: 2
+--- !u!54 &840336003
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840335996}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &972591088
 GameObject:
   m_ObjectHideFlags: 0
@@ -4599,6 +4713,7 @@ GameObject:
   - component: {fileID: 972591090}
   - component: {fileID: 972591094}
   - component: {fileID: 972591093}
+  - component: {fileID: 972591095}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -4698,6 +4813,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpd: 2
+--- !u!54 &972591095
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972591088}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &973531360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4874,6 +5004,7 @@ GameObject:
   - component: {fileID: 1053399557}
   - component: {fileID: 1053399561}
   - component: {fileID: 1053399560}
+  - component: {fileID: 1053399562}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
@@ -4972,6 +5103,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpd: 2
+--- !u!54 &1053399562
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1053399555}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1090330559
 GameObject:
   m_ObjectHideFlags: 0
@@ -4984,6 +5130,7 @@ GameObject:
   - component: {fileID: 1090330562}
   - component: {fileID: 1090330561}
   - component: {fileID: 1090330564}
+  - component: {fileID: 1090330565}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -5070,6 +5217,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 972591089}
   rotSpd: 1
+--- !u!54 &1090330565
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1090330559}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1283376313
 GameObject:
   m_ObjectHideFlags: 0
@@ -5239,6 +5401,7 @@ GameObject:
   - component: {fileID: 1606206470}
   - component: {fileID: 1606206469}
   - component: {fileID: 1606206473}
+  - component: {fileID: 1606206474}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -5325,6 +5488,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpd: 3
+--- !u!54 &1606206474
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606206468}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1635916498
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,6 +5684,7 @@ GameObject:
   - component: {fileID: 1855839587}
   - component: {fileID: 1855839591}
   - component: {fileID: 1855839590}
+  - component: {fileID: 1855839592}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
@@ -5604,6 +5783,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpd: 2
+--- !u!54 &1855839592
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855839585}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1880175683
 GameObject:
   m_ObjectHideFlags: 0
@@ -5800,6 +5994,7 @@ GameObject:
   - component: {fileID: 2089401419}
   - component: {fileID: 2089401423}
   - component: {fileID: 2089401422}
+  - component: {fileID: 2089401424}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -5898,3 +6093,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpd: 2
+--- !u!54 &2089401424
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089401417}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
