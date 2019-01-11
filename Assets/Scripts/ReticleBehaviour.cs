@@ -15,16 +15,20 @@ public class ReticleBehaviour : MonoBehaviour {
     public Material ret_6;
     public Material ret_7;
     public Material ret_8;
+    public Image overlay;
+
+    
     // ^^^^ tohle je abych si mohl naházet materiály přímo z Unity Inspectora
     // toto je zase kolekce těch materiálů, ať se na ně líp přistupuje v cyklu
     List<Material> ret_anim = new List<Material>();
 
     float targettime = 0.2f;
+    public static bool scannerFlag;
 
-    //momentálně debug var, pak si budu frames počítat globálně na všechny tyhle stuffy
     int current_state = 1;
 
-    void Start () {
+    void Start ()
+    {
         //nacpání materiálů do listu, kvůli přehlednosti
         ret_anim.Add(ret_static);
         ret_anim.Add(ret_1);
@@ -35,9 +39,8 @@ public class ReticleBehaviour : MonoBehaviour {
         ret_anim.Add(ret_6);
         ret_anim.Add(ret_7);
         ret_anim.Add(ret_8);
-
         img = GetComponent<Image>();
-            }
+    }
 	
     void NextStep()
     {
@@ -48,7 +51,7 @@ public class ReticleBehaviour : MonoBehaviour {
             current_state = 0;
     }
 
-    bool doAnim = false;
+    public static bool doAnim = false;
     void doAnimation()
     {
         targettime -= Time.deltaTime;
@@ -60,10 +63,18 @@ public class ReticleBehaviour : MonoBehaviour {
         }
     }
 
+
 	void FixedUpdate () {
 
-        //zatím to nebudu hrotit a nasázel jsem to na tlačítko
-        doAnim = Input.GetButton("Fire1");
+        if (scannerFlag)
+        {
+            overlay.enabled = true;
+        }
+        else
+        {
+            overlay.enabled = false;
+        }
+
         if (doAnim)
         {
             doAnimation();

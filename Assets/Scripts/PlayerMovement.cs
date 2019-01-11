@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour {
     public float roll = 0;
     float vel = 0;
 
- 
+    public Camera cam;
     Vector3 movement;
 
     public float sens = 1.323232f;
@@ -86,6 +86,19 @@ public class PlayerMovement : MonoBehaviour {
             trail.enableEmission = true;
         }
 
-        //controlling planet freeze WIP
+        //scanner
+        RaycastHit hit;
+        Ray ray = cam.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            ReticleBehaviour.scannerFlag = true;
+            ScannerBehaviour.Scan(hit.collider.name);
+        }
+        else
+        {
+            ReticleBehaviour.scannerFlag = false;   
+        }
     }
+
 }
