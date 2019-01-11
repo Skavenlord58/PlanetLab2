@@ -55,9 +55,9 @@ public class PlayerMovement : MonoBehaviour {
         // making acceleration curve
         if (player.velocity.magnitude < 21)
             accel = 0.3f;
-        if (player.velocity.magnitude > 21 && player.velocity.magnitude < 49)
+        if (player.velocity.magnitude > 21 && player.velocity.magnitude < 44)
             accel = 0.6f;
-        if (player.velocity.magnitude > 49 && player.velocity.magnitude < 73)
+        if (player.velocity.magnitude > 44 && player.velocity.magnitude < 73)
             accel = 0.9f;
         if (player.velocity.magnitude > 73 && player.velocity.magnitude < 98)
             accel = 1.2f;
@@ -93,11 +93,12 @@ public class PlayerMovement : MonoBehaviour {
         if (Physics.Raycast(ray, out hit))
         {
             ReticleBehaviour.scannerFlag = true;
-            ScannerBehaviour.Scan(hit.collider.name);
+            ScannerBehaviour.Scan(hit.collider.name.ToString());
         }
         else
         {
-            ReticleBehaviour.scannerFlag = false;   
+            ReticleBehaviour.scannerFlag = false;
+            ReticleBehaviour.doAnim = false;
         }
     }
 

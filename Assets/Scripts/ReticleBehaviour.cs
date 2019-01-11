@@ -25,7 +25,7 @@ public class ReticleBehaviour : MonoBehaviour {
     float targettime = 0.2f;
     public static bool scannerFlag;
 
-    int current_state = 1;
+    public static int current_state = 1;
 
     void Start ()
     {
@@ -44,10 +44,11 @@ public class ReticleBehaviour : MonoBehaviour {
 	
     void NextStep()
     {
-        img.material = ret_anim[current_state];
+        if(current_state < 10)
+            img.material = ret_anim[current_state];
         current_state++;
 
-        if (current_state == 9)
+        if (current_state == 10)
             current_state = 0;
     }
 
