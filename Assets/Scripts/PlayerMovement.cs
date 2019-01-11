@@ -99,6 +99,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             ReticleBehaviour.scannerFlag = false;
             ReticleBehaviour.doAnim = false;
+            UIPanelBehaviour.Show = false;
         }
     }
 

@@ -22,7 +22,7 @@ public class ReticleBehaviour : MonoBehaviour {
     // toto je zase kolekce těch materiálů, ať se na ně líp přistupuje v cyklu
     List<Material> ret_anim = new List<Material>();
 
-    float targettime = 0.2f;
+    float targettime = 0.6f;
     public static bool scannerFlag;
 
     public static int current_state = 1;
@@ -60,7 +60,7 @@ public class ReticleBehaviour : MonoBehaviour {
         if (targettime <= 0.0f)
         {
             NextStep();
-            targettime = 0.20f;
+            targettime = 0.60f;
         }
     }
 

@@ -30,6 +30,7 @@ public class ScannerBehaviour : MonoBehaviour {
         else
         {
             GetPlanetInfo(parse);
+            UIPanelBehaviour.Show = true;
         }
     }
 }
