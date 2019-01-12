@@ -24,7 +24,7 @@ public class ScannerBehaviour : MonoBehaviour {
             {
                 ReticleBehaviour.doAnim = false;
                 PlanetNames.Add(parse);
-                Debug.Log("Planet " + parse + " added to the log!");
+                //Debug.Log("Planet " + parse + " added to the log!");
             }
         }
         else
