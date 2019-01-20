@@ -16,8 +16,10 @@ public class ReticleBehaviour : MonoBehaviour {
     public Material ret_7;
     public Material ret_8;
     public Image overlay;
+    public AudioSource scanner;
+    public AudioSource scannerbeep;
+    static AudioSource scannerobject;
 
-    
     // ^^^^ tohle je abych si mohl naházet materiály přímo z Unity Inspectora
     // toto je zase kolekce těch materiálů, ať se na ně líp přistupuje v cyklu
     List<Material> ret_anim = new List<Material>();
@@ -40,6 +42,7 @@ public class ReticleBehaviour : MonoBehaviour {
         ret_anim.Add(ret_7);
         ret_anim.Add(ret_8);
         img = GetComponent<Image>();
+        scannerobject = scannerbeep;
     }
 	
     void NextStep()
@@ -56,12 +59,24 @@ public class ReticleBehaviour : MonoBehaviour {
     void doAnimation()
     {
         targettime -= Time.deltaTime;
+        scanner.mute = false;
+        scanner.volume = 0.02f;
 
         if (targettime <= 0.0f)
         {
             NextStep();
             targettime = 0.60f;
         }
+
+        if (scanner.pitch < 2)
+        {
+            scanner.pitch += 0.002f;
+        }
+    }
+
+    public static void PlayBeep()
+    {
+        scannerobject.Play();
     }
 
 
@@ -78,11 +93,13 @@ public class ReticleBehaviour : MonoBehaviour {
 
         if (doAnim)
         {
-            doAnimation();
+            doAnimation();           
         }
         else
         {
             current_state = 1;
+            scanner.mute = true;
+            scanner.pitch = 1f;
             img.material = ret_anim[0];
         }
         

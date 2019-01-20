@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	Rigidbody player;
     ParticleSystem trail;
+    AudioSource jetengine;
 
     public float accel = 0.3f;
     public float maxAccel = 2.6f;
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour {
     void Start () 
 	{
 		player = GetComponent<Rigidbody>();
+        jetengine = GetComponent<AudioSource>();
         trail = GetComponentInChildren<ParticleSystem>();
         Vector3 currentRot = player.transform.position;
         player.inertiaTensor = Vector3.one;
@@ -89,11 +91,21 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate () 
 	{
         // get inputs
-        pitch = Input.GetAxis("Pitch");
-        yaw = Input.GetAxis("Horizontal");
+        pitch = Input.GetAxis("Pitch") + Input.GetAxis("Mouse Y");
+        yaw = Input.GetAxis("Horizontal") + Input.GetAxis("Mouse X");
         roll = Input.GetAxis ("Roll");
 		vel = Input.GetAxis ("Vertical");
+
+        if (pitch >= 1)
+            pitch = 1;
+        if (pitch < -1)
+            pitch = -1;
+        if (yaw >= 1)
+            yaw = 1;
+        if (yaw < -1)
+            yaw = -1;
         
+
         // controlling pitch
         player.AddTorque(transform.right * pitch * (sens / 2));
 
@@ -160,4 +172,22 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 
+    void Update()
+    {
+        //controlling the engine sound
+        if (vel <= 0)
+        {
+            if (jetengine.volume > 0.001)
+                jetengine.volume -= 0.001f;
+            if (jetengine.pitch > 0)
+                jetengine.pitch -= 0.002f;
+        }
+        if (vel > 0)
+        {
+            if (jetengine.volume < 0.2)
+                jetengine.volume += 0.002f;
+            if (jetengine.pitch < 0.98)
+                jetengine.pitch += 0.001f;
+        }
+    }
 }

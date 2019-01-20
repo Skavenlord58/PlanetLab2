@@ -153,6 +153,7 @@ public class ScannerBehaviour : MonoBehaviour {
             if (ReticleBehaviour.current_state == 9)
             {
                 ReticleBehaviour.doAnim = false;
+                ReticleBehaviour.PlayBeep();
                 PlanetNames.Add(parse);
                 //Debug.Log("Planet " + parse + " added to the log!");
             }
