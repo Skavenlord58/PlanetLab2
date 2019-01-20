@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour {
     ParticleSystem trail;
 
     public float accel = 0.3f;
-    public float maxAccel = 1.6f;
+    public float maxAccel = 2.6f;
     public static float speed = 400;
 
 
@@ -30,6 +30,60 @@ public class PlayerMovement : MonoBehaviour {
         trail = GetComponentInChildren<ParticleSystem>();
         Vector3 currentRot = player.transform.position;
         player.inertiaTensor = Vector3.one;
+    }
+
+    void Stage(int stage)
+    {
+        if (stage == 0)
+        {
+            accel = 0.3f;
+            if (CameraFollow.speedmult < 1.0f && vel > 0.5f)
+                CameraFollow.speedmult += 0.005f;
+            else if (CameraFollow.speedmult > 1.0f)
+                CameraFollow.speedmult -= 0.005f;
+
+        }
+        if (stage == 1)
+        {
+            accel = 0.6f;
+            if (CameraFollow.speedmult < 1.3f && vel > 0.5f)
+                CameraFollow.speedmult += 0.005f;
+            else if (CameraFollow.speedmult > 1.3f)
+                CameraFollow.speedmult -= 0.005f;
+        }
+        if (stage == 2)
+        {
+            accel = 0.9f;
+            if (CameraFollow.speedmult < 1.6f && vel > 0.5f)
+                CameraFollow.speedmult += 0.005f;
+            else if (CameraFollow.speedmult > 1.6f)
+                CameraFollow.speedmult -= 0.01f;
+        }
+        if (stage == 3)
+        {
+            accel = 1.2f;
+            if (CameraFollow.speedmult < 1.9f && vel > 0.5f)
+                CameraFollow.speedmult += 0.005f;
+            else if (CameraFollow.speedmult > 1.9f)
+                CameraFollow.speedmult -= 0.01f;
+        }
+        if (stage == 4)
+        {
+            accel = 1.6f;
+            if (CameraFollow.speedmult < 2.2f && vel > 0.5f)
+                CameraFollow.speedmult += 0.005f;
+            else if (CameraFollow.speedmult > 2.2f)
+                CameraFollow.speedmult -= 0.015f;
+        }
+        if (stage == 5)
+        {
+            accel = maxAccel;
+            if (CameraFollow.speedmult < 3f && vel > 0.5f)
+                CameraFollow.speedmult += 0.005f;
+            else if (CameraFollow.speedmult > 3f)
+                CameraFollow.speedmult -= 0.015f;
+        }
+
     }
 
 	void FixedUpdate () 
@@ -53,16 +107,19 @@ public class PlayerMovement : MonoBehaviour {
         movement = new Vector3(0, 0, vel);
 
         // making acceleration curve
-        if (player.velocity.magnitude < 21)
-            accel = 0.3f;
-        if (player.velocity.magnitude > 21 && player.velocity.magnitude < 44)
-            accel = 0.6f;
-        if (player.velocity.magnitude > 44 && player.velocity.magnitude < 73)
-            accel = 0.9f;
-        if (player.velocity.magnitude > 73 && player.velocity.magnitude < 98)
-            accel = 1.2f;
-        if (player.velocity.magnitude > 98 )
-            accel = maxAccel;
+        if (player.velocity.magnitude < 15)
+            Stage(0);
+        if (player.velocity.magnitude > 15 && player.velocity.magnitude < 44)
+            Stage(1);
+        if (player.velocity.magnitude > 44 && player.velocity.magnitude < 71)
+            Stage(2);
+        if (player.velocity.magnitude > 71 && player.velocity.magnitude < 98)
+            Stage(3);
+        if (player.velocity.magnitude > 98 && player.velocity.magnitude < 131)
+            Stage(4);
+        if (player.velocity.magnitude > 131)
+            Stage(5);
+            
 
 
         // accelerating

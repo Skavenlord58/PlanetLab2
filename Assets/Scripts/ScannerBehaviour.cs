@@ -24,40 +24,40 @@ public class ScannerBehaviour : MonoBehaviour {
     {
 
         PlanetInfo.Insert(0, new string[7]{ "Unknown" , "Area: ???" , "Radius: ???",
-            "Mass: ???", "Density:\n???", "Atmosphere:\n ???","Rate of\n Si/H/Fe: ???" });
+            "Mass: ???", "Density:\n???", "Atmosphere:\n???","Rate of\nSi/H/Fe: ???" });
 
         PlanetInfo.Insert(1, new string[7]{ "Sun" , "Area: ???" , "Radius: ???",
-            "Mass: ???", "Density:\n???", "Atmosphere:\n ???","Rate of\n Si/H/Fe: ???" });
+            "Mass: ???", "Density:\n???", "Atmosphere:\n???","Rate of\nSi/H/Fe: ???" });
 
         PlanetInfo.Insert(2, new string[7]{ "Mercury" , "Area: ???" , "Radius: 2439.7 km",
-            "Mass: ???", "Density:\n5.427 g/cm2", "Atmosphere:\n 0 kPa","Rate of\n Si/H/Fe: 54/0/46" });
+            "Mass: ???", "Density:\n5.427 g/cm2", "Atmosphere:\n0 kPa","Rate of\nSi/H/Fe: 54/0/46" });
 
         PlanetInfo.Insert(3, new string[7]{ "Venus" , "Area: ???" , "Radius: 6051.8 km",
-            "Mass: ???", "Density:\n5.204 g/cm2", "Atmosphere:\n 9 321 kPa","Rate of\n Si/H/Fe: 80/0/20" });
+            "Mass: ???", "Density:\n5.204 g/cm2", "Atmosphere:\n9 321 kPa","Rate of\nSi/H/Fe: 80/0/20" });
 
         PlanetInfo.Insert(4, new string[7]{ "Earth" , "Area: ???" , "Radius: 6378 km",
-            "Mass: ???", "Density:\n5.515 g/cm2", "Atmosphere:\n 100 kPa","Rate of\n Si/H/Fe: 75/1/24" });
+            "Mass: ???", "Density:\n5.515 g/cm2", "Atmosphere:\n100 kPa","Rate of\nSi/H/Fe: 75/1/24" });
 
         PlanetInfo.Insert(5, new string[7]{ "Mars" , "Area: ???" , "Radius: 3396.2 km",
-            "Mass: ???", "Density:\n3.933 g/cm2", "Atmosphere:\n 0.9 kPa","Rate of\n Si/H/Fe: 90/<1/10" });
+            "Mass: ???", "Density:\n3.933 g/cm2", "Atmosphere:\n0.9 kPa","Rate of\nSi/H/Fe: 90/<1/10" });
 
         PlanetInfo.Insert(6, new string[7]{ "Jupiter" , "Area: ???" , "Radius: 71 492 km",
-            "Mass: ???", "Density:\n1.326 g/cm2", "Atmosphere:\n 110 kPa","Rate of\n Si/H/Fe: 2/98/0" });
+            "Mass: ???", "Density:\n1.326 g/cm2", "Atmosphere:\n110 kPa","Rate of\nSi/H/Fe: 2/98/0" });
 
         PlanetInfo.Insert(7, new string[7]{ "Saturn" , "Area: ???" , "Radius: 60 268 km",
-            "Mass: ???", "Density:\n0.6873 g/cm2", "Atmosphere:\n 140 kPa","Rate of\n Si/H/Fe: 2/98/0" });
+            "Mass: ???", "Density:\n0.6873 g/cm2", "Atmosphere:\n140 kPa","Rate of\nSi/H/Fe: 2/98/0" });
 
         PlanetInfo.Insert(8, new string[7]{ "Uranus" , "Area: ???" , "Radius: 25 559 km",
-            "Mass: ???", "Density:\n1.270 g/cm2", "Atmosphere:\n 120 kPa","Rate of\n Si/H/Fe: 2/98/0" });
+            "Mass: ???", "Density:\n1.270 g/cm2", "Atmosphere:\n120 kPa","Rate of\nSi/H/Fe: 2/98/0" });
 
         PlanetInfo.Insert(9, new string[7]{ "Neptune" , "Area: ???" , "Radius: 24 764 km",
-            "Mass: ???", "Density:\n1.638 g/cm2", "Atmosphere:\n >>100 kPa","Rate of\n Si/H/Fe: 14/81/5" });
+            "Mass: ???", "Density:\n1.638 g/cm2", "Atmosphere:\n>>100 kPa","Rate of\nSi/H/Fe: 14/81/5" });
 
         PlanetInfo.Insert(10, new string[7]{ "Pluto" , "Area: ???" , "Radius: ???",
-            "Mass: ???", "Density:\n???", "Atmosphere:\n ???","Rate of\n Si/H/Fe: ???" });
+            "Mass: ???", "Density:\n???", "Atmosphere:\n???","Rate of\nSi/H/Fe: ???" });
 
         PlanetInfo.Insert(11, new string[7]{ "Moon" , "Area: ???" , "Radius: ???",
-            "Mass: ???", "Density:\n???", "Atmosphere:\n ???","Rate of\n Si/H/Fe: ???" });
+            "Mass: ???", "Density:\n???", "Atmosphere:\n???","Rate of\nSi/H/Fe: ???" });
     }
 
     public void Start()
