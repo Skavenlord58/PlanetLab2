@@ -1,6 +1,7 @@
 using System;
 using System.Linq.Expressions;
 using UnityEngine.PostProcessing;
+using UnityEngine;
 
 namespace UnityEditor.PostProcessing
 {
@@ -11,7 +12,7 @@ namespace UnityEditor.PostProcessing
 
         public void OnEnable()
         {
-            m_Profile = FindSetting((PostProcessingBehaviour x) => x.profile);
+                m_Profile = FindSetting((PostProcessingBehaviour x) => x.profile);          
         }
 
         public override void OnInspectorGUI()

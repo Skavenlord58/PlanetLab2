@@ -17,12 +17,17 @@ Everything in this game is self-made (except for default Unity assets), this inc
 curve.  
 
 #### Known bugs
-> * The game freezes for several seconds after you press the Play button in the main menu. This is because the game is loading, and is stuck on the first rendered frame. The loading screen is in progress.
-> * Scanner may go through planets and scan the planet behind the desired planet or the scanner doesn't register a planet at all. This is sadly due to Unity's render capabilities and not my fault (but I'm still trying to fix it!).
+> * ~~The game freezes for several seconds after you press the Play button in the main menu. This is because the game is loading, and is stuck on the first rendered frame. The loading screen is in progress.~~
+> * ~~Scanner may go through planets and scan the planet behind the desired planet or the scanner doesn't register a planet at all. This is sadly due to Unity's render capabilities and not my fault (but I'm still trying to fix it!).~~
 
+#### Changelog
+* 2.19w4.0b
+  * Loading screen
+  * Fully functional ESC menu
+  * Fixed Vsync problems
+  * Fixed Shader issues
+  
 #### Upcoming features (TODO)
-* Loading screen
-* Fully functional ESC menu
 * Better player model (after I get used with Maya/Blender)
 * Credits screen
 * Achievements

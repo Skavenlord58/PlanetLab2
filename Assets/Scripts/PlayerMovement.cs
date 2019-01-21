@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour {
     public float roll = 0;
     float vel = 0;
 
+    public bool usingMouse = false;
+
     public Camera cam;
     Vector3 movement;
 
@@ -91,8 +93,17 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate () 
 	{
         // get inputs
-        pitch = Input.GetAxis("Pitch") + Input.GetAxis("Mouse Y");
-        yaw = Input.GetAxis("Horizontal") + Input.GetAxis("Mouse X");
+        if(usingMouse)
+        {
+            pitch = Input.GetAxis("Mouse Y");
+            yaw = Input.GetAxis("Mouse X");
+        }
+        else
+        {
+            pitch = Input.GetAxis("Pitch");
+            yaw = Input.GetAxis("Horizontal");
+        }
+        
         roll = Input.GetAxis ("Roll");
 		vel = Input.GetAxis ("Vertical");
 
@@ -159,7 +170,7 @@ public class PlayerMovement : MonoBehaviour {
         RaycastHit hit;
         Ray ray = cam.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
 
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit, 1000))
         {
             ReticleBehaviour.scannerFlag = true;
             ScannerBehaviour.Scan(hit.collider.name.ToString());
