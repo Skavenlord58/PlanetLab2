@@ -10,6 +10,9 @@ public class PlanetWaypoint : MonoBehaviour
     public GameObject Planet;
     public Transform playerLoc;
 
+    [Range(1,32)]
+    public int TextScale;
+
     Vector3 planetLoc;
 
     Color customColor = new Color(1f, 0.549f, 0, 0.9f); 
@@ -22,7 +25,7 @@ public class PlanetWaypoint : MonoBehaviour
     {
         Planet = this.gameObject;
         marker.font = markerfont;
-        marker.fontSize = 32;
+        marker.fontSize = TextScale;
         marker.normal.textColor = customColor;
 
     }
