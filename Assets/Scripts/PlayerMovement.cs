@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour {
                 CameraFollow.speedmult -= 0.005f;
 
         }
-        if (stage == 1)
+        else if (stage == 1)
         {
             accel = 0.6f;
             if (CameraFollow.speedmult < 1.3f && vel > 0.5f)
@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour {
             else if (CameraFollow.speedmult > 1.3f)
                 CameraFollow.speedmult -= 0.005f;
         }
-        if (stage == 2)
+        else if (stage == 2)
         {
             accel = 0.9f;
             if (CameraFollow.speedmult < 1.6f && vel > 0.5f)
@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour {
             else if (CameraFollow.speedmult > 1.6f)
                 CameraFollow.speedmult -= 0.01f;
         }
-        if (stage == 3)
+        else if (stage == 3)
         {
             accel = 1.2f;
             if (CameraFollow.speedmult < 1.9f && vel > 0.5f)
@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour {
             else if (CameraFollow.speedmult > 1.9f)
                 CameraFollow.speedmult -= 0.01f;
         }
-        if (stage == 4)
+        else if (stage == 4)
         {
             accel = 1.6f;
             if (CameraFollow.speedmult < 2.2f && vel > 0.5f)
@@ -79,7 +79,7 @@ public class PlayerMovement : MonoBehaviour {
             else if (CameraFollow.speedmult > 2.2f)
                 CameraFollow.speedmult -= 0.015f;
         }
-        if (stage == 5)
+        else if (stage == 5)
         {
             accel = maxAccel;
             if (CameraFollow.speedmult < 3f && vel > 0.5f)
@@ -142,9 +142,7 @@ public class PlayerMovement : MonoBehaviour {
             Stage(4);
         if (player.velocity.magnitude > 131)
             Stage(5);
-            
-
-
+           
         // accelerating
         if (vel >= 0)
             player.AddForce(player.rotation * movement * accel / Time.deltaTime);
